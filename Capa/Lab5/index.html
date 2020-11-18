@@ -24,12 +24,12 @@ th, td {
 
 
       <select id="dlist" onChange="swapImage()">
-      <option value="Bruno_com_fone.png">Bruno</option>
-      <option value="Bruno_sem_fone.png">Felipe</option>
-      <option value="Bruno_com_fone.png">Gabriel</option>
+      <option value="Bruno_com_fone.png">Bruno (com fone)</option>
+      <option value="Bruno_sem_fone.png">Bruno (sem fone)</option>
+      <option value="Bruno_com_fone.png">Felipe (com fone)</option>
     </select><br>
 
-      <img id="imageToSwap" src="Bruno_com_fone.png" style="height:480px;"/>
+      <img id="imageToSwap" src="Bruno_sem_fone.png" style="height:480px;"/>
 
 
       <script type="text/javascript">
@@ -73,6 +73,7 @@ th, td {
   </tr>
 </table>
 <br>
+<br>
 
 <table style="width:100%">
   <caption>Teste de Faixa Audível com fone</caption>
@@ -99,6 +100,7 @@ th, td {
   </tr>
   </tr>
 </table>
+<br>
 <br>
 
 <table style="width:100%">
@@ -163,9 +165,59 @@ O fone tem efeito de isolar os ruiídos externos evitando mascaramentos dos sons
   </tr>
   </tr>
 </table>
+<br>
+<br>
 
+<table style="width:100%">
+  <caption>Mascaramento de Tons Oitava abaixo</caption>
+  <tr>
+    <th>Integrante</th>
+    <th>Tom Ecobridor</th>
+    <th>Tom mascarado</th>
+    <th>Fator de atenuação</th>
 
-    <h4><a href="https://colab.research.google.com/drive/1BtrBEAizwBukcoHDm8VsK7jhZ_OZxlw9#scrollTo=hVV4A4MNrFy0">Código em python</h4>
+  </tr>
+  <tr>
+    <td>Bruno</td>
+    <td>1KHz</td>
+    <td>600Hz</td>
+    <td>-15dB</td>
+  </tr>
+  <tr>
+    <td>Bruno</td>
+    <td>600Hz</td>
+    <td>1KHz</td>
+    <td>-15dB</td>
+  </tr>
+  </tr>
+</table>
+<br>
+<br>
+
+<table style="width:100%">
+  <caption>Mascaramento de Tons Oitava acima</caption>
+  <tr>
+    <th>Integrante</th>
+    <th>Tom Ecobridor</th>
+    <th>Tom mascarado</th>
+    <th>Fator de atenuação</th>
+
+  </tr>
+  <tr>
+    <td>Bruno</td>
+    <td>4KHz</td>
+    <td>2,4KHz</td>
+    <td>-15dB</td>
+  </tr>
+  <tr>
+    <td>Bruno</td>
+    <td>2,4KHz</td>
+    <td>4KHz</td>
+    <td>-15dB</td>
+  </tr>
+  </tr>
+</table>
+    <h4><a href="https://drive.google.com/drive/folders/1Cc2svigtazhCz6MHIQ9JvbtxZ0pB5xen">Código em python</h4>
 
 
         <button onclick="goBack()">Voltar</button>
