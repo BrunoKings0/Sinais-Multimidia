@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <title>Laboratório 2</title>
+    <meta charset = "utf-8">
+
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+  text-align: left;
+}
+</style>
+
+  </head>
+  <body>
+    <h3>Laboratório 5</h3>
+    <h4>Teste de Audiometria</h4>
+
+    <p>Cada integrante realizou o teste audiométrico do site <a href=http://hearingtest.online>hearingtest</a> com e sem fone de ouvido, com os resultados abaixo:</p>
+
+
+      <select id="dlist" onChange="swapImage()">
+      <option value="Bruno_com_fone.png">Bruno</option>
+      <option value="Bruno_sem_fone.png">Felipe</option>
+      <option value="Bruno_com_fone.png">Gabriel</option>
+    </select><br>
+
+      <img id="imageToSwap" src="Bruno_com_fone.png" style="height:480px;"/>
+
+
+      <script type="text/javascript">
+      function swapImage(){
+	       var image = document.getElementById("imageToSwap");
+	        var dropd = document.getElementById("dlist");
+	    image.src = dropd.value;
+      };
+      </script>
+
+    <p>Para o Bruno, o teste audiométrico sem fone ficou entre uma audição normal e uma leve perde de audição, porém ao usar o fone o teste apontou uma audição até acima da favixa normal.</p>
+    <p>Para o Felipe, ............................</p>
+
+    <p>Pode-se concluir que o ruído externo atrapalha muito a audição de certos sinais, mascarando muitos dos sons que conseguimos ouvir quando estamos com um fone de ouvido</p>
+
+    <h4>Teste de Faixa Audível</h4>
+
+<table style="width:100%">
+  <caption>Teste de Faixa Audível sem fone</caption>
+  <tr>
+    <th>Integrante</th>
+    <th>Freq Mímina Audível</th>
+    <th>Freq Máxima Audível</th>
+    <th>Percepção Baixo</th>
+    <th>Percepção ALto</th>
+  </tr>
+  <tr>
+    <td>Bruno</td>
+    <td>175Hz</td>
+    <td>1,7KHz</td>
+    <td>a partir de 140Hz até 4,5KHz</td>
+    <td>de 4,5KHz em diante</td>
+  </tr>
+  <tr>
+    <td>Felipe</td>
+    <td>xxx</td>
+    <td>xxx</td>
+    <td>xxxx</td>
+    <td>dxxxx</td>
+  </tr>
+  </tr>
+</table>
+<br>
+
+<table style="width:100%">
+  <caption>Teste de Faixa Audível com fone</caption>
+  <tr>
+    <th>Integrante</th>
+    <th>Freq Mímina Audível</th>
+    <th>Freq Máxima Audível</th>
+    <th>Percepção Baixo</th>
+    <th>Percepção ALto</th>
+  </tr>
+  <tr>
+    <td>Bruno</td>
+    <td>175Hz</td>
+    <td>1,7KHz</td>
+    <td>a partir de 140Hz até 4,5KHz</td>
+    <td>de 4,5KHz em diante</td>
+  </tr>
+  <tr>
+    <td>Felipe</td>
+    <td>xxx</td>
+    <td>xxx</td>
+    <td>xxxx</td>
+    <td>dxxxx</td>
+  </tr>
+  </tr>
+</table>
+<br>
+
+<table style="width:100%">
+  <caption>Teste de Faixa Audível com Celular</caption>
+  <tr>
+    <th>Integrante</th>
+    <th>Freq Mímina Audível</th>
+    <th>Freq Máxima Audível</th>
+    <th>Percepção Baixo</th>
+    <th>Percepção ALto</th>
+  </tr>
+  <tr>
+    <td>Bruno</td>
+    <td>175Hz</td>
+    <td>1,7KHz</td>
+    <td>a partir de 140Hz até 4,5KHz</td>
+    <td>de 4,5KHz em diante</td>
+  </tr>
+  <tr>
+    <td>Felipe</td>
+    <td>xxx</td>
+    <td>xxx</td>
+    <td>xxxx</td>
+    <td>dxxxx</td>
+  </tr>
+  </tr>
+</table>
+
+</body>
+</html>
+
+
+
+<p>O som é percebido mais alto com o aumento da frequência e foi observado entre os integrantes qeu chega a ser extremamente incomodo, porém chega um ponto em que a perceção
+  do som some ao aumentarmos mais a frequência. Já as ondas de baixa frequência são agradeveis e foram ouvidas por tdos desde o começo da fazia começando com 20Hz.
+O fone tem efeito de isolar os ruiídos externos evitando mascaramentos dos sons, por isso amplia a faixa de audição de modo geral e o celular apresenta uma faixa audível menor, reduzindo ambas as extremidades da faixa. Essa redução depende do aparelho.</p>
+
+<h4>Mascaramento de Tons Harmônicos</h4>
+
+
+
+<table style="width:100%">
+  <caption>Mascaramento de Tons</caption>
+  <tr>
+    <th>Integrante</th>
+    <th>Tom Ecobridor</th>
+    <th>Tom mascarado</th>
+    <th>Fator de atenuação</th>
+
+  </tr>
+  <tr>
+    <td>Bruno</td>
+    <td>2KHz</td>
+    <td>1,2KHz</td>
+    <td>-15dB</td>
+  </tr>
+  <tr>
+    <td>Bruno</td>
+    <td>1,2KHz</td>
+    <td>2KHz</td>
+    <td>-15dB</td>
+  </tr>
+  </tr>
+</table>
+
+
+    <h4><a href="https://colab.research.google.com/drive/1BtrBEAizwBukcoHDm8VsK7jhZ_OZxlw9#scrollTo=hVV4A4MNrFy0">Código em python</h4>
+
+
+        <button onclick="goBack()">Voltar</button>
+  </body>
+</html>
+<script>
+function goBack() {
+  window.history.back();
+}
+</script>
