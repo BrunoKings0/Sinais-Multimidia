@@ -21,7 +21,10 @@ th, td {
     <h3>PDS Voz</h4>
 
     <p>Foram gravados três audios: um contendo a voz de dígitos numéricos, outro com voz falada e outro com voz declamada. Para cada áudio foram analisadas diversas características do sinal conforme abaixo:</p>
-    <h3>Sinal 1 - Dígito<h4>
+    <h3>Sinal 1 - Dígitos<h4>
+      <audio controls>
+        <source src="RA11129211.wav" type="audio/ogg">
+      </audio> <br>
 		<h4>Sinal no tempo:</h4>
 			<img src="Sinal1.png"  style="width:650px;"><br>
 		<h4>Energia de tempo curto:</h4>
@@ -32,6 +35,9 @@ th, td {
       <br>
       <br>
 	 <h3>Sinal 2 - Voz falada<h4>
+     <audio controls>
+       <source src="BrunoReisVieira.wav" type="audio/ogg">
+     </audio> <br>
 		<h4>Sinal no tempo:</h4>
 			<img src="Sinal2.png"  style="width:650px;"><br>
 		<h4>Energia de tempo curto:</h4>
@@ -42,6 +48,9 @@ th, td {
       <br>
       <br>
      <h3>Sinal 3 - Voz declamada<h4>
+       <audio controls>
+         <source src="DaEternaProcura.wav" type="audio/ogg">
+       </audio> <br>
 
 		<h4>Sinal no tempo:</h4>
 			<img src="Sinal3.png"  style="width:650px;"><br>
@@ -52,6 +61,117 @@ th, td {
       <br>
       <br>
       <br>
+
+      <h2>Análise de Pitch e frequência fundamental</h2>
+      <p>Para cada sinal foi selecionado um fonema e feita uma análise do Pitch, sua frequência fundamental e formantes conforme abaixo:</p>
+      <h4>Sinal 1 - Dígitos</h4>
+      <p>Para o sinal 1 foi selecionado o fonema /u/ da palavra "Um": </p>
+        <audio controls>
+          <source src="FonemaSinal1.wav" type="audio/ogg">
+        </audio> <br>
+        <p>O sinal no tempo e a auto-correlação do trecho selecionado são exibidos nas figuras abaixo:</p>
+        <img src="TrechoSinal1.png"  style="width:650px;"><br>
+        <img src="AutoCorrelaçãoSinal1.png"  style="width:650px;"><br>
+        <p>A auto-correlação revela a periodícidade no espectro e partir do gráfico conseguimos detectar o peŕiodo de Pitch como T=3,6ms e a frquência fundamental f0=278Hz</p>
+
+        <h4>Sinal 2 - Voz falada</h4>
+        <p>Para o sinal 2 foi selecionado o fonema /a/ da palavra "Vieira": </p>
+          <audio controls>
+            <source src="FonemaSinal2.wav" type="audio/ogg">
+          </audio> <br>
+          <p>O sinal no tempo e a auto-correlação do trecho selecionado são exibidos nas figuras abaixo:</p>
+          <img src="TrechoSinal2.png"  style="width:650px;"><br>
+          <img src="AutoCorrelaçãoSinal2.png"  style="width:650px;"><br>
+          <p>A partir do gráfico conseguimos detectar o peŕiodo de Pitch como T=10,5ms e a frquência fundamental f0=95Hz</p>
+
+          <h4>Sinal 3 - Voz Declamada</h4>
+          <p>Para o sinal 3 foi selecionado o fonema /ó/ da palavra "Só": </p>
+            <audio controls>
+              <source src="FonemaSinal3.wav" type="audio/ogg">
+            </audio> <br>
+            <p>O sinal no tempo e a auto-correlação do trecho selecionado são exibidos nas figuras abaixo:</p>
+            <img src="TrechoSinal3.png"  style="width:650px;"><br>
+            <img src="AutoCorrelaçãoSinal3.png"  style="width:650px;"><br>
+            <p>A partir do gráfico conseguimos detectar o peŕiodo de Pitch como T=1,5ms e a frquência fundamental f0=667Hz</p>
+
+            <h2>Análise das formantes</h2>
+            <p>As figuras abaixo apresentam o espectro de cada trecho com o primeiro circulo vermelho representando a frequequência fundamental e os seguintes as formantes. </p>
+            <img src="FormantesVogalSinal1.png"  style="width:650px;"><br>
+            <img src="FormantesVogalSinal2.png"  style="width:650px;"><br>
+            <img src="FormantesVogalSinal3.png"  style="width:650px;"><br>
+
+            <p>A tabela abaixo resume todas as formantes enontradas visulamente no gráfico de cada trecho e também um comparativo entre os valores encontrados da fundamental utilizando tanto a autocorrelação quanto o espectro. Percebe-se que em ambos os métodos a fundamental encontrada é similar </p>
+            <table style="width:100%">
+              <caption>Frequências fundamentais e formantes dos sinais</caption>
+              <tr>
+                <th>Fonema</th>
+                <th>f0 - Autocorrelação</th>
+                <th>f0 - Espectro</th>
+                <th>f1</th>
+                <th>f2</th>
+                <th>f3</th>
+                <th>f4</th>
+              </tr>
+              <tr>
+                <td>Sinal 1 - /u/</td>
+                <td>278Hz</td>
+                <td>275Hz</td>
+                <td>400Hz</td>
+                <td>530Hz</td>
+                <td>680Hz</td>
+                <td>792Hz</td>
+              </tr>
+              <tr>
+                <td>Sinal 2 - /a/</td>
+                <td>95Hz</td>
+                <td>95Hz</td>
+                <td>180Hz</td>
+                <td>290Hz</td>
+                <td>380Hz</td>
+                <td>450Hz</td>
+              </tr>
+              <tr>
+                <td>Sinal 3 - /ó/</td>
+                <td>667Hz</td>
+                <td>630Hz</td>
+                <td>800Hz</td>
+                <td>1000Hz</td>
+                <td>1200Hz</td>
+                <td>14200Hz</td>
+              </tr>
+
+              </tr>
+            </table>
+
+          <h2>Identificando Constantes e sons plosivos</h2>
+
+          <h4>Constante S</h4>
+          <p>O trecho abaixo apresenta a consoante "S" na palavra "Só", podemos identificar pelo aspecto do sinal no domínio do tempo que parece um ruido branco e pela distribuição homogênea das frequencias no espectro</p>
+          <audio controls>
+            <source src="SomS.wav" type="audio/ogg">
+          </audio> <br>
+          <img src="SomS.png"  style="width:650px;"><br>
+          <img src="EspectrogramaS.png"  style="width:650px;"><br>
+
+          <h4>Constante P</h4>
+          <p>O trecho abaixo apresenta a consoante "P" na palavra "Passa", podemos identificar o som plosivo no domínio do tempo que ocorre repentinamente depois de um período sem som</p>
+          <audio controls>
+            <source src="SomP.wav" type="audio/ogg">
+          </audio> <br>
+          <img src="SomP.png"  style="width:650px;"><br>
+          <img src="EspectrogramaP.png"  style="width:650px;"><br>
+
+          <h4>Constante J</h4>
+          <p>O trecho abaixo apresenta a consoante J, percebe-se pela baixa energia que ele tem em cmparaçao com as vogais que cercam o som dele no domínio do tempo e também pelo espalhamento da frequência no espectro</p>
+          <audio controls>
+            <source src="SomJ.wav" type="audio/ogg">
+          </audio> <br>
+          <img src="SomJ.png"  style="width:650px;"><br>
+          <img src="EspectroJ.png"  style="width:650px;"><br>
+
+          <p>Os relatórios podem ser encontrados ná página do <a href='https://github.com/BrunoKings0/Sinais-Multimidia'>github</a> e o código em
+            python e outros arquivos no <a href='https://drive.google.com/drive/folders/1h8tW6ZfQAwm00t8qm0jJurtJA63pmkjh?usp=sharing'>google drive</a></p>
+
         <button onclick="goBack()">Voltar</button>
   </body>
 </html>
