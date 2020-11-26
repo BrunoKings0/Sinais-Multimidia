@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br" dir="ltr">
   <head>
-    <title>Laboratório 6</title>
+    <title>Laboratório 7</title>
     <meta charset = "utf-8">
 
 <style>
@@ -17,42 +17,37 @@ th, td {
 
   </head>
   <body>
-    <h2>Laboratório 6</h3>
-    <h3>PDS Voz</h4>
+    <h2>Laboratório 7</h3>
+    <h3>Codificação de Voz e Áudio</h4>
 
-    <p>Foram gravados três audios: um contendo a voz de dígitos numéricos, outro com voz falada e outro com voz declamada. Para cada áudio foram analisadas diversas características do sinal conforme abaixo:</p>
-    <h3>Sinal 1 - Dígito<h4>
+    <p>Foi gravado um áudio nos moldes do áudio original</p>
+		<audio controls>
+		<source src="Entre_Leva_Catia_Falada.wav" type="audio/wav">
+		Your browser does not support the audio element.
+		</audio>
+	<br>
+	    
 		<h4>Sinal no tempo:</h4>
-			<img src="Sinal1.png"  style="width:650px;"><br>
-		<h4>Energia de tempo curto:</h4>
-			<img src="EnergiaSinal1.png"  style="width:650px;"><br>
-		<h4>Espectrograma:</h4>
-			<img src="EspectrogramaSinal1.png"  style="width:650px;">
-      <br>
-      <br>
-      <br>
-	 <h3>Sinal 2 - Voz falada<h4>
+			<img src="audio1.png"  style="width:650px;"><br>
+	<p>Após, foi separada a primeira estrofe:</p>  	  
+	  <audio controls>
+		<source src="1estrofe.wav" type="audio/wav">
+		Your browser does not support the audio element.
+		</audio>
+	<br>
+	    
 		<h4>Sinal no tempo:</h4>
-			<img src="Sinal2.png"  style="width:650px;"><br>
-		<h4>Energia de tempo curto:</h4>
-			<img src="EnergiaSinal2.png"  style="width:650px;"><br>
-		<h4>Espectrograma:</h4>
-			<img src="EspectrogramaSinal2.png"  style="width:650px;">
-      <br>
-      <br>
-      <br>
-     <h3>Sinal 3 - Voz declamada<h4>
-
-		<h4>Sinal no tempo:</h4>
-			<img src="Sinal3.png"  style="width:650px;"><br>
-		<h4>Energia de tempo curto:</h4>
-			<img src="EnergiaSinal3.png"  style="width:650px;"><br>
-		<h4>Espectrograma:</h4>
-			<img src="EspectrogramaSinal3.png"  style="width:650px;">
-      <br>
-      <br>
-      <br>
+			<img src="primeiraestrofe.png"  style="width:650px;"><br>
+  
+	  
         <button onclick="goBack()">Voltar</button>
+		
+		
+		
+		
+		
+		
+		
   </body>
 </html>
 <script>
