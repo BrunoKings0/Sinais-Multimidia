@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <title>Laboratório 6</title>
+    <meta charset = "utf-8">
+
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+  text-align: left;
+}
+</style>
+
+  </head>
+  <body>
+    <h3>Laboratório 6</h3>
+    <h4>PDS Voz</h4>
+
+    <p>Foram gravados três audios: um contendo a voz de dígitos numéricos, outro com voz falada e outro com voz declamada. Para cada áudio foram analisadas diversas características do sinal conforme abaixo:</p>
+    <h3>Sinal 1 - Dígito<h4>
+
+
+      <img src="Sinal1.png"  style="height:350px;">
+      <img src="EnergiaSinal1.png"  style="height:350px;">
+      <img src="EspectrogramaSinal1.png"  style="height:350px;">
+
+      <br>
+      <br>
+      <br>
+
+      <select id="dlist" onChange="swapImage()">
+      <option value="Bruno_com_fone.png">Bruno (com fone)</option>
+      <option value="Bruno_sem_fone.png">Bruno (sem fone)</option>
+      <option value="Felipe_com_fone.PNG">Felipe (com fone)</option>
+      <option value="Felipe_sem_fone.png">Felipe (sem fone)</option>
+    </select><br>
+
+      <img id="imageToSwap" src="Bruno_sem_fone.png" style="height:480px;"/>
+
+
+      <script type="text/javascript">
+      function swapImage(){
+	       var image = document.getElementById("imageToSwap");
+	        var dropd = document.getElementById("dlist");
+	    image.src = dropd.value;
+      };
+      </script>
+
+    <p>Para o Bruno, o teste audiométrico sem fone ficou entre uma audição normal e uma leve perde de audição, porém ao usar o fone o teste apontou uma audição até acima da faixa normal.</p>
+    <p>Para o Felipe o teste ficou na faixa normal, com uma faixa melhor utilizando o fone de ouvido </p>
+
+    <p>Percebe-se que o ruído externo atrapalha muito a audição de certos sinais, mascarando muitos dos sons que conseguimos ouvir quando estamos com um fone de ouvidos. Um melhor resultado no teste do Felipe sem fone, excluindo a possibilidade de perda auditiva,  pode ser devido a um ambiente mais silencioso ou também um menor corte na banda dos sinais pelo computador. Já com o fone os testes apresentaram resultados semelhantes, o que mostra que ele pode ter eliminado esses fatores esternos e de equipamento.</p>
+
+    <h4>Teste de Faixa Audível</h4>
+
+<table style="width:100%">
+  <caption>Teste de Faixa Audível sem fone</caption>
+  <tr>
+    <th>Integrante</th>
+    <th>Freq Mímina Audível</th>
+    <th>Freq Máxima Audível</th>
+    <th>Percepção Baixo</th>
+    <th>Percepção Alto</th>
+  </tr>
+  <tr>
+    <td>Bruno</td>
+    <td>175Hz</td>
+    <td>1,7KHz</td>
+    <td>a partir de 140Hz até 4,5KHz</td>
+    <td>de 4,5KHz em diante</td>
+  </tr>
+  <tr>
+    <td>Felipe</td>
+    <td>20Hz</td>
+    <td>18KHz</td>
+    <td>A partir de 13kHz até os 20kHz</td>
+    <td>De 20Hz até 13Khz </td>
+  </tr>
+  </tr>
+</table>
+<br>
+<br>
+
+<table style="width:100%">
+  <caption>Teste de Faixa Audível com fone</caption>
+  <tr>
+    <th>Integrante</th>
+    <th>Freq Mímina Audível</th>
+    <th>Freq Máxima Audível</th>
+    <th>Percepção Baixo</th>
+    <th>Percepção Alto</th>
+  </tr>
+  <tr>
+    <td>Bruno</td>
+    <td>175Hz</td>
+    <td>1,7KHz</td>
+    <td>A partir de 140Hz até 4,5KHz</td>
+    <td>De 4,5KHz em diante</td>
+  </tr>
+  <tr>
+    <td>Felipe</td>
+    <td>20Hz</td>
+    <td>20Khz</td>
+    <td>A partir de 13kHz até os 20kHz</td>
+    <td>De 20Hz até 14Khz </td>
+  </tr>
+  </tr>
+</table>
+<br>
+<br>
+
+<table style="width:100%">
+  <caption>Teste de Faixa Audível com Celular</caption>
+  <tr>
+    <th>Integrante</th>
+    <th>Freq Mímina Audível</th>
+    <th>Freq Máxima Audível</th>
+    <th>Percepção Baixo</th>
+    <th>Percepção ALto</th>
+  </tr>
+  <tr>
+    <td>Bruno</td>
+    <td>175Hz</td>
+    <td>1,7KHz</td>
+    <td>A partir de 140Hz até 4,5KHz</td>
+    <td>De 4,5KHz em diante</td>
+  </tr>
+  <tr>
+    <td>Felipe</td>
+    <td>20Hz</td>
+    <td>14KHz</td>
+    <td>De 12Khz até 14KHz</td>
+    <td>De 20Hz até 12KHz</td>
+  </tr>
+  </tr>
+</table>
+
+</body>
+</html>
+
+
+
+<p>Um som mais alto é percebido com o aumento da frequência e a partir de certo ponto chega a ser extremamente incomodo para os integrantes, porém em altas frequências a perceção
+  do nível do som vai diminuindo até ser inaudível. Já as ondas de baixa frequência são agradeveis e foram ouvidas por todos desde o começo da faixa começando com 20Hz.
+O fone tem efeito de isolar os ruiídos externos evitando mascaramentos dos sons, por isso amplia a faixa de audição de modo geral e o celular apresenta uma faixa audível menor, reduzindo ambas as extremidades da faixa. Essa redução depende do aparelho.</p>
+
+<h4>Mascaramento de Tons Harmônicos</h4>
+
+
+
+<table style="width:100%">
+  <caption>Mascaramento de Tons</caption>
+  <tr>
+    <th>Integrante</th>
+    <th>Tom Ecobridor</th>
+    <th>Tom mascarado</th>
+    <th>Fator de atenuação</th>
+
+  </tr>
+  <tr>
+    <td>Bruno</td>
+    <td>2KHz</td>
+    <td>1,2KHz</td>
+    <td>-15dB</td>
+  </tr>
+  <tr>
+    <td>Bruno</td>
+    <td>1,2KHz</td>
+    <td>2KHz</td>
+    <td>-15dB</td>
+  </tr>
+  <tr>
+    <td>Felipe</td>
+    <td>2KHz</td>
+    <td>1,2KHz</td>
+    <td>-15dB</td>
+  </tr>
+  <tr>
+    <td>Felipe</td>
+    <td>1,2KHz</td>
+    <td>2KHz</td>
+    <td>-15dB</td>
+  </tr>
+  </tr>
+</table>
+<br>
+<br>
+
+<table style="width:100%">
+  <caption>Mascaramento de Tons Oitava abaixo</caption>
+  <tr>
+    <th>Integrante</th>
+    <th>Tom Ecobridor</th>
+    <th>Tom mascarado</th>
+    <th>Fator de atenuação</th>
+
+  </tr>
+  <tr>
+    <td>Bruno</td>
+    <td>1KHz</td>
+    <td>600Hz</td>
+    <td>-15dB</td>
+  </tr>
+  <tr>
+    <td>Bruno</td>
+    <td>600Hz</td>
+    <td>1KHz</td>
+    <td>-15dB</td>
+  </tr>
+  </tr>
+  <tr>
+    <td>Felipe</td>
+    <td>1KHz</td>
+    <td>600Hz</td>
+    <td>-12dB</td>
+  </tr>
+  <tr>
+    <td>Felipe</td>
+    <td>600Hz</td>
+    <td>1KHz</td>
+    <td>-12dB</td>
+  </tr>
+</table>
+<br>
+<br>
+
+<table style="width:100%">
+  <caption>Mascaramento de Tons Oitava acima</caption>
+  <tr>
+    <th>Integrante</th>
+    <th>Tom Ecobridor</th>
+    <th>Tom mascarado</th>
+    <th>Fator de atenuação</th>
+
+  </tr>
+  <tr>
+    <td>Bruno</td>
+    <td>4KHz</td>
+    <td>2,4KHz</td>
+    <td>-15dB</td>
+  </tr>
+  <tr>
+    <td>Bruno</td>
+    <td>2,4KHz</td>
+    <td>4KHz</td>
+    <td>-15dB</td>
+  </tr>
+  <tr>
+    <td>Felipe</td>
+    <td>4KHz</td>
+    <td>2,4KHz</td>
+    <td>-12dB</td>
+  </tr>
+  <tr>
+    <td>Felipe</td>
+    <td>2,4KHz</td>
+    <td>4KHz</td>
+    <td>-12dB</td>
+  </tr>
+  </tr>
+</table>
+
+<br>
+<br>
+
+<p>Um outro teste psicoacústico que não foi realizado nesta experiência é da não linearidade da sensibilidade da percepção de intensidade sonora.</p>
+<br>
+
+<p>Este <a href='https://www.researchgate.net/publication/226656941_Psychoacoustics_of_a_chilling_sound'>link </a> apresenta um trabalho muito interesante sobre percepção
+   acústica, onde foram selecionados vários sons considerados desagradáveis (como o arranhar de um quadro negro) e depois trabalharam em cima deles utilizando filtros passa-baixas e passa-altas.
+ O resultado mostrou que os filtros-passa baixa não influenciavam muito na redução do teor desagradável do som, enquanto que os filtros passa-altas aumentaram a agradabilidade do som nos voluntários, de maneira
+que nesses sons as componentes de baixa frequência são responsáveis por esse caráter desagradável, o que é totalmente contra intuitivo, incluive nos testes realizados neste esperimento de laboratório o grupo observou qum grande incômodo no teste
+ de faixa audível quando a frequecia se elevava muito. </p>
+ <br>
+
+ <p>Os relatórios podem ser encontrados ná página do <a href='https://github.com/BrunoKings0/Sinais-Multimidia'>github</a> e o código em
+   python e outros arquivos no <a href='https://drive.google.com/drive/folders/1Cc2svigtazhCz6MHIQ9JvbtxZ0pB5xen?usp=sharing'>google drive</a></p>
+
+
+
+        <button onclick="goBack()">Voltar</button>
+  </body>
+</html>
+<script>
+function goBack() {
+  window.history.back();
+}
+</script>
