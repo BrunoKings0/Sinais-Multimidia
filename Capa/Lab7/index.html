@@ -21,42 +21,85 @@ th, td {
     <h3>Codificação de Voz e Áudio</h4>
 
     <p>Foi gravado um áudio nos moldes do áudio original</p>
+    <h5>Felipe</h5>
 		<audio controls>
 		<source src="Entre_Leva_Catia_Falada.wav" type="audio/wav">
-		Your browser does not support the audio element.
 		</audio>
+    <h5>Bruno</h5>
+    <audio controls>
+    <source src="Vambora_Bruno.wav" type="audio/wav">
+    </audio>
 	<br>
-	    
+
 		<h4>Sinal no tempo:</h4>
-			<img src="audio1.png"  style="width:650px;"><br>
-	<p>Após, foi separada a primeira estrofe:</p>  	  
-	  <audio controls>
-		<source src="1estrofe.wav" type="audio/wav">
-		Your browser does not support the audio element.
-		</audio>
+			<img src="audio1.png"  style="width:650px;">
+      <img src="sinal_tempo_bruno.png"  style="width:650px;">
+	<p>Após, foi separada a primeira estrofe:</p>
+
+  <h5>Felipe</h5>
+  <audio controls>
+  <source src="1estrofe.wav" type="audio/wav">
+  </audio>
+  <h5>Bruno</h5>
+  <audio controls>
+  <source src="Estrofe_bruno.wav" type="audio/wav">
+  </audio>
 	<br>
-	    
+
 		<h4>Sinal no tempo:</h4>
-			<img src="primeiraestrofe.png"  style="width:650px;"><br>
-		<h4>Janela de Hamming:</h4>
+			<img src="primeiraestrofe.png"  style="width:650px;">
+      <img src="primeira_estrofe_bruno.png"  style="width:650px;"><br>
+		<h4>Janela de Hamming Utilizada:</h4>
 			<img src="hamming.png"  style="width:350px;"><br>
 		<h4>Energia de Voz da primeira estrofe:</h4>
-			<img src="1estrofeenergia.png"  style="width:650px;"><br>		
+			<img src="1estrofeenergia.png"  style="width:650px;">
+      <img src="energia_estrofe_bruno.png"  style="width:650px;"><br>
 		<h4>Segmentos sonoros:</h4>
-			<img src="ssonoros.png"  style="width:1200px;"><br>	
+
+    <select id="dlist" onChange="swapImage()">
+    <option value="ssonoros_bruno.png">Bruno</option>
+    <option value="ssonoros.png">Felipe</option>
+  </select><br>
+
+    <img id="imageToSwap" src="ssonoros_bruno.png"/>
+
+
+    <script type="text/javascript">
+    function swapImage(){
+       var image = document.getElementById("imageToSwap");
+        var dropd = document.getElementById("dlist");
+    image.src = dropd.value;
+    };
+    </script>
+
+			<!--<img src="ssonoros.png"  style="width:1200px;"><br>-->
 		<h4>Segmentos surdos:</h4>
-			<img src="ssurdos.png"  style="width:1200px;"><br>	
- 
- 
- 
+
+    <select id="dlist2" onChange="swapImage2()">
+    <option value="ssurdos_bruno.png">Bruno</option>
+    <option value="ssurdos.png">Felipe</option>
+  </select><br>
+
+    <img id="imageToSwap2" src="ssurdos_bruno.png" style="width:1170px;"/>
+
+
+    <script type="text/javascript">
+    function swapImage2(){
+       var image = document.getElementById("imageToSwap2");
+        var dropd = document.getElementById("dlist2");
+    image.src = dropd.value;
+    };
+    </script>
+<br>
+<br>
+      <!--<img src="ssurdos.png"  style="width:1200px;"><br>-->
+
+
+
  <button onclick="goBack()">Voltar</button>
-		
-		
-		
-		
-		
-		
-		
+
+
+
   </body>
 </html>
 <script>
