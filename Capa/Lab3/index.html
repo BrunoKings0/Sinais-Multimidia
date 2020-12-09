@@ -1,32 +1,93 @@
 <!DOCTYPE html>
 <html lang="pt-br" dir="ltr">
   <head>
-    <title>Laboratório 3</title>
+    <title>Laboratório 6</title>
     <meta charset = "utf-8">
+
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+  text-align: left;
+}
+</style>
+
+  </head>
+  <body>
+    <h2>Laboratório 3</h3>
+    <h3>Codificação de Imagem por DCT<</h4>
       <h3> Imprime cores trocadas (BGR) e reais (RGB)</h3>
 	   <h4> Felipe:</h4>
 		<img src="1.png"  style="height:350px;">
 		<h4> Bruno:</h4>
+    <img src="Bruno\CoresTrocadas.png"  style="height:350px;">
 		<h3> Converte para os formatos YCrCb e HSV</h3>
 		<h4> Felipe:</h4>
 		<img src="2.png"  style="height:350px;">
 		<h4> Bruno:</h4>
+    <img src="Bruno\YCrCb&HSV.png"  style="height:350px;">
 		<h3>Separação das Camadas RGB individualmente</h3>
 		<h4> Felipe:</h4>
 		<img src="3.png"  style="height:350px;">
 		<h4> Bruno:</h4>
-		<h3>Separação dos Canais YCbCr</h3>
+    <img src="Bruno\Camadas.png"  style="height:350px;">
 		<h4> Felipe:</h4>
 		<img src="4.png"  style="height:350px;">
 		<h4> Bruno:</h4>
+    <img src="Bruno\Canais.png"  style="height:350px;">
 		<h3>COMPRESSÃO DE IMAGENS COM PERDAS</h3>
 		<h4> Felipe:</h4>
 		<img src="5.png"  style="height:350px;">
 		<h4> Bruno:</h4>
+    <img src="Bruno\Compressao.png"  style="height:350px;">
+    <p>A tabela abaixo apresenta a comparação entre os arquivos originais e comprimidos </p>
+
+    <table style="width:60%">
+      <caption>Tamanho das imagens originais e comprimidas</caption>
+      <tr>
+        <th>Integrante</th>
+        <th>Imagem Original (bytes)</th>
+        <th>JEG fator 25</th>
+        <th>JPEG fator 05</th>
+        <th>% compressão fator 25</th>
+        <th>% compressão fator 05</th>
+      </tr>
+      <tr>
+        <td>Bruno</td>
+        <td>76.600</td>
+        <td>40.325</td>
+        <td>21.629</td>
+        <td>47,36</td>
+        <td>71,76</td>
+
+      </tr>
+      <tr>
+        <td>Felipe</td>
+        <td>xxxx</td>
+        <td>xxxx</td>
+        <td>xxxxx</td>
+        <td>xxxx</td>
+        <td>xxxx</td>
+      </tr>
+      <tr>
+        <td>Grupo</td>
+        <td>xxxxx</td>
+        <td>xxxx</td>
+        <td>xxxx</td>
+        <td>xxxx</td>
+        <td>xxxx</td>
+      </tr>
+      </tr>
+    </table>
+
 		<h3>Bloco Original e Reconstruído com Zeros das componentes AC da diagonal para baixo zerados</h3>
 		<h4> Felipe:</h4>
 		<img src="6.png"  style="height:350px;">
 		<h4> Bruno:</h4>
+    <img src="Bruno\DCT.png"  style="height:350px;">
 
 
 	   <button onclick="goBack()">Voltar</button>
