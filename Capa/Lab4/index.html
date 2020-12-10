@@ -17,22 +17,42 @@ th, td {
 
   </head>
   <body>
-    <h2>Laboratório 4</h3>
-    <h3></h4>
+    <h3>Laboratório 5</h3>
+    <h4>Codificação de Imagem com DWT</h4>
 
-    <p>A imagem foi cortada pois o programa apresentava erro com a imagem completa</p>
-    <h3>C. Codicação de Luminância (P&B) com DWT<h3>
+
+<p>Selecione o integrante:</p>
+    <select id="test" name="form_select" onchange="showDiv(this)">
+   <option value="0">Bruno</option>
+   <option value="1">Felipe</option>
+</select>
+
+
+<script type="text/javascript">
+function showDiv(select){
+   if(select.value==1){
+    document.getElementById('Felipe_block').style.display = "block";
+    document.getElementById('Bruno_block').style.display = "none";
+   } else{
+    document.getElementById('Felipe_block').style.display = "none";
+    document.getElementById('Bruno_block').style.display = "block";
+   }
+}
+</script>
+    <p>Obs: As imagens originais foram cortadas para um formato quadrado, pois o programa apresentava erro com a imagem completa</p>
+    <div id="Felipe_block" style="display:none;">
+    <h3>C. Codicação de Luminância (P&B) com DWT</h3>
 			<img src="1.png"  style="width:450px;"><br>
-			 <h4>C.1 Cálculo do Erro Quadrático Médio (MSE) e da Relação Sinal Ruído de Pico (PSNR)<h4><br>
-			 <h5>MSE_Y = 3.72e-13<h5>
-			<h5>PSNR_Luma = 172.43 dB<h5>
+			 <h4>C.1 Cálculo do Erro Quadrático Médio (MSE) e da Relação Sinal Ruído de Pico (PSNR)</h4><br>
+			 <p>MSE_Y = 3.72e-13</p>
+			<p>PSNR_Luma = 172.43 dB</p>
 			<img src="2.png"  style="width:450px;"><br>
-			<h4>D. Teste das Funções de Multiresolução wavedec2() e waverec2()<h4>
+			<h4>D. Teste das Funções de Multiresolução wavedec2() e waverec2()</h4>
 			<img src="3.png"  style="width:450px;"><br>
 			<img src="4.png"  style="width:450px;"><br>
-			<h4>E. Efetuar uma "Montagem" com wavedec2() e wavedecn()<h4>
+			<h4>E. Efetuar uma "Montagem" com wavedec2() e wavedecn()</h4>
 			<img src="5.png"  style="width:450px;"><br>
-			<h4>F. Reconstrução de Imagem Colorida<h4>
+			<h4>F. Reconstrução de Imagem Colorida</h4>
 			<img src="6.png"  style="width:450px;"><br>
 			<img src="7.png"  style="width:450px;"><br>
 			<img src="8.png"  style="width:450px;"><br>
@@ -41,16 +61,48 @@ th, td {
 			<img src="11.png"  style="width:450px;"><br>
 			<img src="12.png"  style="width:450px;"><br>
 			<img src="13.png"  style="width:450px;"><br>
-			<h4>G. Salvando as Aproximações e depois fazendo download dos arquivos, calcular a taxa de compressão com o original<h4>
+			<h4>G. Salvando as Aproximações e depois fazendo download dos arquivos, calcular a taxa de compressão com o original</h4>
 			<img src="14.bmp"  style="width:450px;"><br>
 			<img src="15.bmp"  style="width:450px;"><br>
-			<h4>H. Gravando o Arquivo Codificado DWT/IDWT nível 1 Colorido, calcular a taxa de compressão com o original<h4>
+			<h4>H. Gravando o Arquivo Codificado DWT/IDWT nível 1 Colorido, calcular a taxa de compressão com o original</h4>
 			<img src="16.bmp"  style="width:450px;"><br>
-			<h4>I. Reconstrução da Imagem colorida e Cálculo da MSE de cada plano de cor e da PSNR total<h4>
-			<h5>MSE_Red= 4.90e-13  MSE_Green= 3.49e-13  MSE_Blue= 1.80e-13<h5>
-			<h5>PSNR total = 168.05 dB<h5>
+			<h4>I. Reconstrução da Imagem colorida e Cálculo da MSE de cada plano de cor e da PSNR total</h4>
+			<p>MSE_Red= 4.90e-13  MSE_Green= 3.49e-13  MSE_Blue= 1.80e-13</p>
+			<p>PSNR total = 168.05 dB</p>
 			<img src="17.png"  style="width:450px;"><br>
-		
+		</div>
+
+      <div id="Bruno_block" style="display:block;">
+        <h3>C. Codicação de Luminância (P&B) com DWT</h3>
+          <img src="Bruno/Iluminancia.png"  style="width:450px;"><br>
+           <h4>C.1 Cálculo do Erro Quadrático Médio (MSE) e da Relação Sinal Ruído de Pico (PSNR)</h4>
+           <p>MSE_Y = 1.64e-24h5</p>
+          <p>PSNR_Luma = 285.99 dB</p>
+          <img src="Bruno/PSNR.png"  style="width:450px;"><br>
+          <h4>D. Teste das Funções de Multiresolução wavedec2() e waverec2()</h4>
+          <img src="Bruno/Coeficientes.png"  style="width:450px;"><br>
+          <img src="Bruno/Reconstruida.png"  style="width:450px;"><br>
+          <h4>E. Efetuar uma "Montagem" com wavedec2() e wavedecn()</h4>
+          <img src="Bruno/Multinivel.png"  style="width:450px;"><br>
+          <h4>F. Reconstrução de Imagem Colorida</h4>
+          <img src="Bruno/reconstrucaoColorida.png"  style="width:450px;"><br>
+          <img src="Bruno/reconstrucaoRed.png"  style="width:450px;">
+          <img src="Bruno/reconstrucaoRedGrande.png"  style="width:450px;"><br>
+          <img src="Bruno/reconstrucaoGreen.png"  style="width:450px;">
+          <img src="Bruno/reconstrucaoGreenGrande.png"  style="width:450px;"><br>
+          <img src="Bruno/reconstrucaoBlue.png"  style="width:450px;">
+          <img src="Bruno/reconstrucaoBlueGrande.png"  style="width:450px;"><br>
+          <img src="Bruno/reconstruidaNivel1.png"  style="width:450px;"><br>
+          <h4>G. Salvando as Aproximações e depois fazendo download dos arquivos, calcular a taxa de compressão com o original</h4>
+          <img src="Bruno/Bruno_DWT_N1_Y.bmp"  style="width:450px;">
+          <img src="Bruno/Bruno_DWT_N2_Y.bmp"  style="width:450px;"><br>
+          <h4>H. Gravando o Arquivo Codificado DWT/IDWT nível 1 Colorido, calcular a taxa de compressão com o original</h4>
+          <img src="Bruno/Bruno_DWT_N1_colorida.bmp"  style="width:450px;"><br>
+          <h4>I. Reconstrução da Imagem colorida e Cálculo da MSE de cada plano de cor e da PSNR total</h4>
+          <p>MSE_Red= 1.84e-24  MSE_Green= 1.78e-24  MSE_Blue= 1.49e-24</p>
+          <p>PSNR total = 281.05 dB</p>
+          <img src="Bruno/reconstruidaPSNR.png"  style="width:450px;"><br>
+      </div>
 
         <button onclick="goBack()">Voltar</button>
   </body>
